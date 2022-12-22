@@ -1,8 +1,7 @@
-import express from 'express'
-import __dirname from './utils.js'
-import handlebars from 'express-handlebars'
-import { Server } from 'socket.io'
-import viewsRouter from './routes/views.router.js'
+const express   = require('express')
+const handlebars = require('express-handlebars')
+const { Server } = require('socket.io')
+const viewsRouter = require('./routes/views.router.js')
 
 const app = express()
 const httpServer = app.listen(8080, () => console.log('Listening on PORT 8080...'))
